@@ -1,0 +1,37 @@
+\subsection{Verhalten reeller Funktionen}
+
+\begin{karte}{Wie lautet der Satz von Taylor?}
+	Sei $f:[a,b] \to \mathbb{R}$ eine $(n+1)mal$ stetig differenzierbare Funktion. Dann gilt für alle $x_0 \in [a,b]$ und $x=x_0 + h \in [a,b]$ die Taylorsche Formel,
+	\begin{multline}
+		f(x)=f(x_0+h)=\\ f(x_o) + \frac{f'(x_0)}{1!}h + \frac{f''(x_0)}{2!}h^2 +  \cdots+\frac{f^{(n)}(x_0)}{n!}h^n + R_{n+1}(x)
+	\end{multline}
+	mit dem Restglied der Ordnung $n+1$.\vspace{2.5mm}
+	\begin{align}
+		R_{n+1}(x) = \frac{f^{(n+1)}(x_0 + \vartheta\ h)}{(n+1)!}h^{(n+1)} \ \ mit \ \vartheta \in [0,1] 
+	\end{align}
+	
+\end{karte}
+
+\begin{karte}{Lokale Extrema}
+	Sei \(f:[a,b]\to\mathbb{R}\) stetig. \(x_0 \in (a,b)\) heißt \emph{lokales Minimum (Maximum)}, wenn ein \(\delta > 0\) existiert, so dass \(f(x_0)\leq f(x)\) (\(f(x_0)\geq f(x)) \) für \(\lvert x-x_0\rvert < \delta \).\par
+	Präziser gesprochen ist \(x_0\) eine lokale \emph{Extremalstelle} (Minimal- oder Maximalstelle), und \(f(x_0)\) ist der lokale \emph{Extremalwert} (Minimal- oder Maximalwert).
+\end{karte}
+
+\begin{karte}{Charakterisierung stationäre Punkte}
+	Sei \(f'(x_0)=0,\ f^{(k)}(x_0)=0 \text{ für } k=2\dots n \), jedoch \\ \(f^{(n+1)} (x_0) \neq 0\).
+	\begin{enumerate}[label=\(\triangleright \)]
+		\item Im Fall \((n+1)\) gerade, ist \(x_0\)
+		      \begin{enumerate}[label=--]
+		      	\item für \( f^{(n+1)}(x_0)>0 \) ist ein \emph{lokales Minimum},
+		      	\item für \( f^{(n+1)}(x_0)<0 \) ist ein \emph{lokales Maximum}.
+		      \end{enumerate}
+		\item Im Fall das \( (n+1) \) ungerade ist \(x_{(0)}\) ein sogenannter \emph{Sattelpunkt}, d.h.\ in jeder Umgebung von \(x_0\) gibt es Punkte mit \(f(x)>f(x_0)\) und mit \(f(x)<f(x_0)\).\vspace{5mm}\par
+		      Beachte: Ein Sattelpunkt ist ein Wendepunkt mit \(f'(x_0)=0\).
+	\end{enumerate}
+\end{karte}
+\subsection{Iterationsverfahren}
+\begin{karte}{Rekursive Definition des Newton-Verfahrens}
+	\begin{align}
+		x_{(n+1)}:=x_{n}-\frac{f(x_n)}{f'(x_n)},\ \ n=0,1,2,\dots 
+	\end{align}
+\end{karte}

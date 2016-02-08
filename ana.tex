@@ -1,0 +1,69 @@
+
+\documentclass[a6paper,11pt,print
+,grid=both
+%,toc
+]{kartei}
+\usepackage[naustrian]{babel}
+%\usepackage{lmodern} 					% Latin Modern
+%\usepackage{concrete} 					% Computer Concrete, Microtype deaktivieren
+
+\usepackage{beton}
+\usepackage{eulervm}					% AMS Euler, Microtype deaktivieren
+
+%\usepackage{concmath}
+%\usepackage{times}
+\usepackage[utf8]{inputenc} 				% UTF-Codierung
+\usepackage[T1]{fontenc}
+%\usepackage{ulem}						% Unterstreichen, Durchstreichen
+\usepackage{amsmath} 					% Mathemakros
+\usepackage{amsfonts}
+\usepackage{enumitem}
+\usepackage{import}
+
+
+
+\DeclareMathOperator\arsinh{arsinh}
+\DeclareMathOperator\artanh{artanh}
+\DeclareMathOperator\arcosh{arcosh}
+
+
+\begin{document}
+
+%%
+%%Anmerkungen /subsections bei themen, zb absolute konvergenz kriterien.
+
+{\Large
+
+	\section*{Analysis I}
+	\setcounter{section}{1}
+
+
+
+	\begin{karte}{Formulieren Sie die Definition der gleichmäßigen Stetigkeit.}
+		Eine Funktion $f$ heißt \emph{gleichmäßig stetig} auf dem Intervall $I$, wenn zu jedem $\varepsilon > 0$ ein $\delta = \delta(\varepsilon) > 0$ existiert, so dass für alle $x_1,x_2 \in I$ mit $\lvert x_1 - x_2 \rvert < \delta $ gilt
+		\begin{align}
+			\lvert f(x_1) - f(x_2) \rvert<\varepsilon
+		\end{align}
+		{\large
+			Beachte: In der Definition der gleichmäßigen Stetigkeit darf $\delta$ nur von $\varepsilon$ abhängen, aber nicht von der Stelle $x$ (wie in der Definition der Stetigkeit an einer festen Stelle $c$)
+		}
+	\end{karte}
+
+
+
+	\input{1Einleitung2Mengen.tex}
+	\input{3reeleZahlen4.tex}
+	\input{5unendlR.tex}
+	\input{6reel7.tex}
+	\input{8elemfunk9.tex}
+	\input{10verhreelfunk11.tex}
+	\input{12riemann.tex}
+	\input{13funkfolgen14.tex}
+
+
+
+
+
+
+}
+\end{document}

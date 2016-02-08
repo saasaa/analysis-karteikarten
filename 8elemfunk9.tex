@@ -1,0 +1,115 @@
+\subsection{Elementare Funktionen}
+
+
+
+\begin{karte}{(Natürliche und allgemeine) Exponentialfunktion und Logarithmus}
+	{\large
+		\begin{align}
+			e^{x+y}         & =  e^{x}e^{y},    & e^{x\cdot y} & ={(e^{x})}^{y}, & e^{-x}           & = \frac{1}{e^{x}} \\
+			\ln{(x\cdot y)} & =\ln{x} + \ln{y}, & \ln{x^{k}}   & =k\ln{x},       & \ln{\frac{1}{x}} & = -\ln{x}         \\
+			a^{x+y} &=  a^{x}a^{y},				& a^{x\cdot y}&={(a^{x})}^{y}\\
+			&&	a^x&={\left(e^{\ln{a}}\right)}^x=e^{x\ln{a}}\\
+			&&\log_{a}x&=\frac{\ln{x}}{\ln{a}},\ 0<x<\infty
+		\end{align}
+	}
+\end{karte}
+
+\begin{karte}{Pythagoräische Identität, Sinussatz, Additionstheoreme}
+	\begin{enumerate}[label=\(\triangleright \)]
+		\item \(\sin^{2}\alpha+\cos^{2}\alpha = 1\)\dotfill \emph{Pythagoräische Identität}
+		\item \(\frac{\sin{\alpha}}{a}=\frac{\sin{\beta}}{b}=\frac{\sin{\gamma}}{c} \)  \dotfill \emph{Sinussatz}
+		\item \(c^2=a^2+b^2-2ab\cos{\gamma} \)  \dotfill \emph{Cosinussatz}
+		\item \(\sin{(\alpha \pm \beta)} 	=	\sin{\alpha}\cos{\beta}	\pm	\cos{\alpha}\sin{\beta}\)
+		\item \(\cos{(\alpha \pm \beta)} 	=	\cos{\alpha}\cos{\beta}	\mp	\sin{\alpha}\sin{\beta}\)
+	\end{enumerate}
+\end{karte}
+
+\subsection{Differentialrechung}
+
+\begin{karte}{Differenzierbarkeit}
+	Sei \(f:(a,b)\to\mathbb{R}\) und \(x\in(a,b)\). Wenn \(\displaystyle\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\) existiert, dann heißt \(f\) \emph{differenzierbar} an der Stelle \(x\). Man schreibt
+	\begin{align}
+		f'(x):=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}
+	\end{align}
+	und bezeichnet \(f'(x)\) als die \emph{1. Ableitung} oder \emph{Differentialquotient} von \(f\) an der Stelle \(x\).
+\end{karte}
+
+\begin{karte}{Ableitung der Umkehrfunktion}
+	Sei \( f(x) \) in \((a,b)\) differenzierbar und streng monoton, weiters sei \(f'(x)\neq 0, x\in(a,b)\). Dann exisitiert die Umkehrfunktion \(f^{-1}\) und ist differenzierbar. Es gilt
+	\begin{align}
+		(f^{-1}(y))'=\frac{1}{f'(f^{-1}(y))}
+	\end{align}
+\end{karte}
+
+\begin{karte}{Ableitungen von \(\ln{x}\), \(\log_{a}{x}\) und den zyklometrischen Funktionen}
+	\begin{align}
+		\frac{d}{dx}\ln{x}     & =\frac{1}{x}\, ,            &   & \frac{d}{dx}\log_a x = \frac{1}{\ln{a}}\frac{1}{x} \\
+		\frac{d}{dx}\arcsin{x} & =\frac{1}{\sqrt{1-x^2}}\, , &   & x\in(-1,1)                                         \\
+		\frac{d}{dx}\arccos{x} & =-\frac{1}{\sqrt{1-x^2}}\,, &   & x\in(-1,1)                                         \\
+		\frac{d}{dx}\arctan{x} & =\frac{1}{1+x^2}\, ,        &   & x\in\mathbb{R}
+	\end{align}
+\end{karte}
+
+\begin{karte}{Ableitung von \(\arsinh{x}\), \(\arcosh{x}\) und \(\artanh{x}\)}
+	\begin{align}
+		\frac{d}{dx}\arsinh{x} & =\frac{1}{\sqrt{x^2+1}}\, , & x & \in\mathbb{R} \\
+		\frac{d}{dx}\arcosh{x} & =\pm\frac{1}{x^2-1}\, ,     & x & >1            \\
+		\frac{d}{dx}\artanh{x} & =\frac{1}{1-x^2}\, ,        & x & \in(-1,1)
+	\end{align}
+\end{karte}
+
+\begin{karte}{Wie lautet der 1. Mittelwertsatz der Differentialrechnung?}
+
+	Sei \(f(x)\) stetig auf \([a,b]\) und differenzierbar auf \((a,b)\). Dann existiert ein \(\xi \in (a,b)\) mit
+	\begin{align}
+		f'(\xi)=\frac{f(b)-f(a)}{b-a}
+	\end{align}
+	{\large
+		\emph{Geometrische Interpretation:} Es gibt mindestens einen Punkt \(\xi \in (a,b)\), an dem die Steigung der Tangente an den Graphen von $f$ gleich der Steigung der Geraden durch die Punkte \((a, f(a))\) und \((b, f(b))\) ist. Siehe Abb. 9.4 im Skript.
+	}
+\end{karte}
+
+
+
+\begin{karte}{Wie lautet der 2. Mittelwertsatz der Differentialrechnung?}
+	Seien \(f, g\) stetig auf \([a,b]\) und differenzierbar auf \(a,b\). Dann existiert \(\xi\in(a,b)\) mit
+	\begin{align}
+		f'(\xi)(g(b)-g(a))=g'(\xi)(f(b)-f(a))
+	\end{align}
+	(Der Speizialfall \(g(x)=x\) ergibt wiederum den 1. Mittelwertsatz.)
+\end{karte}
+
+
+
+\begin{karte}{Wie lautet der Satz von Rolle?}
+	Sei \(f(x)\) stetig auf \([a,b]\), differenzierbar auf \((a,b)\) und gilt \(f(a)=f(b)\). Dann existiert ein \(\xi \in (a,b) \) mit \(f'(\xi)=0\)
+\end{karte}
+
+\begin{karte}{Maximalbetrag der Ableitung als Lipschitzkonstante}
+	Sei \(f\) stetig differenzierbar auf \([a,b]\). Dann ist \(f\) Lipschitz-stetig auf \([a,b]\), d.h.\ es gilt
+	\begin{align}
+		\lvert f(x_1)-f(x_2)\rvert \leq L\lvert x_1 - x_2\rvert \  \forall\  x_1,x_2 \in [a,b]
+	\end{align}
+	mit \(L=\displaystyle\max_{x\in[a,b]}\lvert f'(x)\rvert \) als kleinstmöglicher Lipschitzkonstante.
+
+\end{karte}
+
+\begin{karte}{Regel von de l'Hospital für \(0/0\)}
+	Die Funktionen \(f,g:[c,c+\varepsilon]\to\mathbb{R}\) seien stetig und auf \((c,c+\varepsilon)\) differenzierbar. Es gelte
+	\begin{align}
+		  & f(c)=g(c)=0                              & und\ \ &g'(x)\neq 0, x\in(c,c+\varepsilon) &                                    \\
+		\intertext{%
+		Falls der Grenzwert}
+		  & \lim_{x\to c+}\frac{f'(x)}{g'(x)}=\gamma &        &(\gamma=\pm\infty\ \ zugelassen!)  \\
+		\intertext{%
+		existiert, dann gilt auch}
+		  & \lim_{x\to c+}\frac{f(x)}{g(x)}=\gamma   &        &
+	\end{align}
+
+\end{karte}
+
+\begin{karte}{Wie lautet die Leibnizsche Produktregel}
+	\begin{align}
+		{(fg)}^{(n)}=\sum_{k=0}^{n} \binom{n}{k}f^{(k)}g^{(n-k)}
+	\end{align}
+\end{karte}

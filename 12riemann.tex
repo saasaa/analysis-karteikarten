@@ -1,0 +1,31 @@
+\subsection{Riemann Integral}
+
+\begin{karte}{Wie lautet der erste Mittelwertsatz der Integralrechnung}
+	Ist \(f(x)\) stetig auf \([a,b]\), dann existiert ein \(\xi\in[a,b]\) mit
+	\begin{align}
+		\int_{a}^{b}f(x)dx=f(\xi)(b-a)
+	\end{align}
+\end{karte}
+
+\begin{karte}{Zweiter Mittelwertsatz der Integralrechnung}
+	Sei \(f(x)\) stetig auf \([a,b]\), und \(g:[a,b]\to \mathbb{R}\) sei integrierbar, wobei \(g(x)\geq0,\ x\in[a,b],\ \int_{a}^{b} g(x)dx>0\). Dann existier ein \(\xi\in[a,b]\) mit
+	\begin{align}
+		\int_{a}^{b} f(x)g(x)dx=f{\xi}\int_{a}^{b} g(x)dx
+	\end{align}
+\end{karte}
+
+
+\begin{karte}{Hauptsatz der Differential und Integralrechnung}
+	\begin{enumerate}[label= (\roman*)]
+
+		\item Sei \(f:[a,b] \to \mathbb{R}\) stetig. Dann ist die Funktion \(F(x) = \int_a^x f(\xi)d\xi \) auf \([a,b]\) stetig differenzierbar, und es gilt
+		      \begin{align}
+		      	F'(x) = \frac{d}{dx} \int_a^x f(\xi)d\xi=f(x)
+		      \end{align}
+
+		\item Sei \(f: I \to \mathbb{R}\) stetig, und \(F\) sei eine Stammfuntkion von \(f\). Dann gilt für \(a,b \in I\)
+		      \begin{align}
+		      	\int_a^b f(x)dx = F(b) - F(a) =: F(x)|_a^b
+		      \end{align}
+	\end{enumerate}
+\end{karte}

@@ -1,0 +1,42 @@
+\subsection{Einleitung}
+\begin{karte}{Geometrische Summe}
+	Für alle reelen Zahlen \(q \in \mathbb{R},\ q\neq1\), und alle \(n \in \mathbb{N}_0\) gilt
+	\begin{align}
+		\sum_{k=0}^{n} q^k = \frac{1-q^{n+1}}{1-q}
+	\end{align}
+\end{karte}
+
+\begin{karte}{Binomialkoeffizient}
+	Für \(n\) und \(k \in \mathbb{N}_0\), \( k \leq n\) ist der \emph{Binomialkoeffizient} \(\binom{n}{k}\) definiert durch
+	\begin{align}
+		\binom{n}{k} := \frac{n!}{k!(n-k)!}
+	\end{align}
+\end{karte}
+
+\begin{karte}{Wie lautet der Binomische Lehrsatz?}
+	Für alle x, y \(\in \mathbb{R}\) und \(n \in \mathbb{N}\) gilt:
+	\begin{align}
+		{(x + y)}^n = \sum_{k=0}^{n}\binom{n}{k} x^{n-k}y^k=\sum_{k=0}^{n}\binom{n}{k} x^{k}y^{n-k}
+	\end{align}
+\end{karte}
+
+\subsection{Mengen und Abbildungen}
+
+
+\begin{karte}{Injektivität, Surjektivität, Bijektivität}
+	{\large
+		Eine Abbildung \(f\) heißt \emph{injektiv}, wenn für alle \(a_1,a_2 \in A\) gilt:
+		\begin{align}
+			a_1 \neq a_2 \implies f(a_1) \neq f(a_2),
+		\end{align}
+		d.h.\ zu jedem $b\in B$ gibt es \emph{höchstens} ein $a\in A$ mit\\ $b=f(a)$.
+
+		Eine Abbildung \(f\) heißt \emph{surjektiv}, wenn jedes Element von \(B\)  als Bild eines Elements von $A$ auftritt:
+		\begin{align}
+			\forall \ b \in B: \exists a\in A \ mit \ b=f(a)
+		\end{align}
+		d.h.\ zu jedem \(b\in B\) gibt es \emph{mindestens} ein \(a\in A\) mit\\ \(b=f(a)\).
+
+		Eine Abbildung \(f\), die sowohl injektiv als auch surjektiv ist, heißt \emph{bijektiv}. Anders ausgedrückt: Zu jedem \(b \in B\) gibt es \emph{genau ein} \(a \in A\) mit \(b=f(a)\)
+	}
+\end{karte}
