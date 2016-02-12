@@ -1,19 +1,19 @@
 \subsection{Unendliche Reihen}
 \begin{karte}{Geometrische Reihe}
 	\begin{align}
-		\sum_{k=0}^{\infty} =\frac{1}{1-q}\ \text{für} \ \lvert q\rvert < 1 
+		\sum_{k=0}^{\infty} =\frac{1}{1-q}\ \text{für} \ \lvert q\rvert < 1
 	\end{align}
 \end{karte}
 
 \begin{karte}{Formulieren Sie das Leibnitz-Kriterium für die Konvergenz von alternierenden Reihen.}
 	{\large Eine Reihe der Bauart
 		\begin{align}
-			\sum_{k=0}^{\infty} {(-1)}^{k} a_k, \ mit \ \ a_k > 0\ \text{für }k=0,1,2,\dots 
+			\sum_{k=0}^{\infty} {(-1)}^{k} a_k, \ mit \ \ a_k > 0\ \text{für }k=0,1,2,\dots
 		\end{align}
 		heißt \emph{alternierende Reihe.}}\vspace{5mm}\par
 	Falls die Folge \( \{ a_k \} \) monoton gegen 0 konvergiert, dann ist die alternierende Reihe
 	\begin{align}
-		\sum_{k=0}^{\infty}{(-1)}^k a_k 
+		\sum_{k=0}^{\infty}{(-1)}^k a_k
 	\end{align}
 	konvergent.
 \end{karte}
@@ -25,7 +25,7 @@
 
 \begin{karte}{Konvergenzkriterien: Majoranten- und Minorantenkriterium}
 	\begin{enumerate}[label=\textbullet]
-		
+
 		\item Sei \(\sum_{k=1}^{\infty}a_k\) eine Reihe mit positiven Glieder, also \\ \( a_k > 0\). Falls ein \(M \in\ \mathbb{N}\) existiert, so dass für alle \(k \geq\ M\) gilt \(\lvert c_k\rvert \leq\ a_k\), dann heißt \(\sum_{k=1}^{\infty}a_k\) \emph{Majorante} der Reihe \(\sum_{k=1}^{\infty}c_k\)
 		      \begin{enumerate}[label=\(\triangleright \)]
 		      	\item Eine Reihe, die eine kovergente Majorante besitzt, ist absolut konvergent.
@@ -34,58 +34,58 @@
 		      \begin{enumerate}[label=\(\triangleright \)]
 		      	\item Eine Reihe, die eine divergente Minorante besitzt, kann nicht absolut konvergieren.
 		      \end{enumerate}
-		      
+
 	\end{enumerate}
 \end{karte}
 
 \begin{karte}{Quotientenkriterium für absolute Konvergenz einer Reihe}
 	Falls für die Reihe \(\sum_{k=1}^{\infty}a_k\) ab einem gewissen Index \(N\), also für alle \( k \geq N\) gilt
 	\begin{enumerate}[label=\(\triangleright \)]
-		
+
 		\item \(\lvert \frac{a_{k+1}}{a_k}\rvert \leq q < 1\), dann ist die Reihe absolut konvergent.
-		      
+
 		\item \(\lvert \frac{a_{k+1}}{a_k}\rvert \geq  1\), dann ist die Reihe divergent.
-		      
+
 		\item \(\lvert \frac{a_{k+1}}{a_k}\rvert \leq  1\), jedoch nicht \(<1\), dann ist keine allgemeine Aussage möglich.
 	\end{enumerate}
-	
+
 \end{karte}
 
 \begin{karte}{Quotientenkriterium (Grenzwertformulierung)}
 	Falls der Grenzwert
 	\begin{align}
-		\lim_{k\to\infty} \lvert \frac{a_{k+1}}{a_k}\rvert =: r 
+		\lim_{k\to\infty} \lvert \frac{a_{k+1}}{a_k}\rvert =: r
 	\end{align}
 	existiert, dann gilt:
-	
+
 	\begin{enumerate}[label=\(\triangleright \)]
-		
+
 		\item für \(r<1\) ist die Reihe absolut konvergent,
 		\item für \(r>1\) ist sie divergent,
 		\item für \(r=1\) ist keine Aussage möglich.
 	\end{enumerate}
-	
-	
+
+
 \end{karte}
 
 \begin{karte}{Wurzelkriterium für absolute Konvergenz einer Reihe}
 	Falls für eine Reihe \(\sum_{k=1}^{\infty}a_k\) ab einem gewissen Index, also für  alle \(k \geq N\) gilt:
-	
+
 	\begin{enumerate}[label=\(\triangleright \)]
-		
+
 		\item \(\sqrt[k]{\lvert a_k\rvert} \leq q < 1\), dann ist die Reihe absolut konvergent.
-		      
+
 		\item \(\sqrt[k]{\lvert a_k\rvert} \geq  1\), dann ist die Reihe divergent.
-		      
+
 		\item \(\sqrt[k]{\lvert a_k\rvert} \leq  1\), jedoch nicht \(\leq q <1\), dann ist keine  Aussage möglich.
 	\end{enumerate}
-	
+
 \end{karte}
 
 \begin{karte}{Wurzelkriterium (Grenzwertformulierung)}
 	Falls der Grenzwert
 	\begin{align}
-		\lim_{k\to\infty} \sqrt[k]{\lvert a_k\rvert} = r 
+		\lim_{k\to\infty} \sqrt[k]{\lvert a_k\rvert} = r
 	\end{align}
 	existiert, dann gilt:
 	\begin{enumerate}[label=\(\triangleright \)]
@@ -98,14 +98,14 @@
 \begin{karte}{Reihendarstellung für \(e\), allgemeine Exponentialreihe}
 	Die Eulersche Zahl
 	\begin{align}
-		e=\lim_{n\to\infty}{\left(1+\frac{1}{n}\right)}^n 
+		e=\lim_{n\to\infty}{\left(1+\frac{1}{n}\right)}^n
 	\end{align}
 	besitzt die Darstellung als unendliche Reihe:
 	\begin{align}
-		e=\sum_{k=0}^{\infty}\frac{1}{k!} 
+		e=\sum_{k=0}^{\infty}\frac{1}{k!}
 	\end{align}
 	allgemeine Exponentialreihe:
 	\begin{align}
-		\lim_{n\to\infty}{\left(1+\frac{x}{n}\right)}^n=\sum_{k=0}^{\infty}\frac{x^n}{k!}=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots=:e^x 
+		\lim_{n\to\infty}{\left(1+\frac{x}{n}\right)}^n=\sum_{k=0}^{\infty}\frac{x^n}{k!}=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots=:e^x
 	\end{align}
 \end{karte}
